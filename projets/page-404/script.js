@@ -50,7 +50,7 @@ function resetGame() {
   grid = Array(9).fill(null);
   currentPlayer = "X";
   if (!statusText) return;
-  statusText.textContent = "Joueur X commence";
+  statusText.textContent = "Le joueur X commence!";
   board.querySelectorAll(".cell").forEach((cell) => {
     cell.textContent = "";
     cell.classList.remove("taken");
